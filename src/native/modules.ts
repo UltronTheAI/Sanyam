@@ -8,6 +8,17 @@ export type AppUsage = {
   totalTimeMs: number;
 };
 
+export type DisciplineStatus = {
+  activeUsageMs: number;
+  nextBreakInMs: number;
+  breakRemainingMs: number;
+  isBreakActive: boolean;
+  usageAccessEnabled: boolean;
+  accessibilityEnabled: boolean;
+  notificationEnabled: boolean;
+  batteryUnrestricted: boolean;
+};
+
 type UsageModuleShape = {
   getTodayUsageMinutes(): Promise<number>;
   getTodayAppUsage(): Promise<AppUsage[]>;
@@ -19,6 +30,9 @@ type DisciplineModuleShape = {
   configure(settings: SanyamSettings): Promise<void>;
   startBreak(minutes: number): Promise<void>;
   openAccessibilitySettings(): Promise<void>;
+  openBatterySettings(): Promise<void>;
+  requestNotificationPermission(): Promise<boolean>;
+  getStatus(): Promise<DisciplineStatus>;
   showNotification(title: string, message: string): Promise<void>;
 };
 
@@ -48,6 +62,18 @@ export const DisciplineModule: DisciplineModuleShape =
         configure: async () => undefined,
         startBreak: unavailable('DisciplineModule'),
         openAccessibilitySettings: unavailable('DisciplineModule'),
+        openBatterySettings: unavailable('DisciplineModule'),
+        requestNotificationPermission: async () => false,
+        getStatus: async () => ({
+          activeUsageMs: 0,
+          nextBreakInMs: 0,
+          breakRemainingMs: 0,
+          isBreakActive: false,
+          usageAccessEnabled: false,
+          accessibilityEnabled: false,
+          notificationEnabled: false,
+          batteryUnrestricted: false,
+        }),
         showNotification: unavailable('DisciplineModule'),
       };
 
