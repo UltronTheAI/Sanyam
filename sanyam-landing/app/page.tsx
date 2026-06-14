@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const githubUrl = "https://github.com/UltronTheAI/Sanyam/";
+const releaseUrl = "https://github.com/UltronTheAI/Sanyam/releases/tag/MVP";
 
 const features = [
   ["💧", "Water every hour", "Hydrate like a responsible houseplant."],
@@ -50,7 +51,7 @@ export default function Home() {
 
             <div className="flex flex-col gap-3 sm:flex-row">
               <a
-                href={githubUrl}
+                href={releaseUrl}
                 className="rounded-2xl bg-lime-300 px-6 py-4 text-center font-black text-black shadow-[0_0_40px_rgba(190,242,100,0.25)] hover:bg-lime-200"
               >
                 Download APK
