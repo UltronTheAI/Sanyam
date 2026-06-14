@@ -1,5 +1,12 @@
 # 🧩 Phone Setup
 
+## 🗺️ Docs Map
+
+- [Main README](../README.md)
+- [Backstory](BACKSTORY.md)
+- [Build APK](BUILD_APK.md)
+- [Roadmap](ROADMAP.md)
+
 Sanyam needs a few Android powers. Not superhero powers. More like hall-monitor powers.
 
 ## 1. Usage Access

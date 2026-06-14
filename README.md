@@ -63,6 +63,15 @@ After installing, open Sanyam and tap the setup buttons:
 - Android UsageStatsManager
 - Android VpnService
 
+## 🗺️ Docs Map
+
+- [Backstory](docs/BACKSTORY.md) — why this tiny discipline monster exists
+- [Build APK](docs/BUILD_APK.md) — make the Android APK
+- [Phone Setup](docs/SETUP.md) — permissions without panic
+- [Roadmap](docs/ROADMAP.md) — future goblin upgrades
+- [Contributing](CONTRIBUTING.md) — help without breaking the parachute
+- [Security](SECURITY.md) — safety notes for serious humans
+
 ## 🛟 Emergency Rule
 
 Default unlock code:

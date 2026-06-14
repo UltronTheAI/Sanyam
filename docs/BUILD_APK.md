@@ -1,5 +1,12 @@
 # 📦 Build The APK
 
+## 🗺️ Docs Map
+
+- [Main README](../README.md)
+- [Backstory](BACKSTORY.md)
+- [Phone Setup](SETUP.md)
+- [Roadmap](ROADMAP.md)
+
 Sanyam has custom Android code. That means:
 
 > Expo Go = nope  

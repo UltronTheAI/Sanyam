@@ -1,5 +1,12 @@
 # 🗺️ Roadmap
 
+## 🧭 Docs Map
+
+- [Main README](../README.md)
+- [Backstory](BACKSTORY.md)
+- [Build APK](BUILD_APK.md)
+- [Phone Setup](SETUP.md)
+
 Stuff Sanyam wants to become when it grows up:
 
 - ✅ Android-only MVP

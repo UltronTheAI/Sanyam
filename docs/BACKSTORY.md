@@ -1,5 +1,12 @@
 # 🧃 Why I Built Sanyam
 
+## 🗺️ Docs Map
+
+- [Main README](../README.md)
+- [Build APK](BUILD_APK.md)
+- [Phone Setup](SETUP.md)
+- [Roadmap](ROADMAP.md)
+
 I built **Sanyam** because I’m trying to become the person I keep dreaming about.
 
 Not “someday maybe” person.  
