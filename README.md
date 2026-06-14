@@ -1,56 +1,82 @@
-# Welcome to your Expo app 👋
+# 🧘 Sanyam
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+> Your phone: “one more reel?”  
+> Sanyam: “nice try, tiny rectangle goblin.”
 
-## Get started
+![phone bonk gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3RmbXlnaW9vM2cyNjh6dWg1ZWw0MWs5ZDNnYnB4M2EwdG82ajJraCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o7aD2saalBwwftBIY/giphy.gif)
 
-1. Install dependencies
+Sanyam is a **personal Android discipline app** built with **Expo + React Native + native Android**.
 
-   ```bash
-   npm install
-   ```
+It helps you:
 
-2. Start the app
+- ⏰ take breaks after screen-time marathons
+- 💧 remember water like a responsible houseplant
+- 😴 block distracting apps during sleep time
+- 🧱 manage blocked apps and adult domains
+- 🚪 keep an emergency unlock code, because traps are for cartoons
 
-   ```bash
-   npx expo start
-   ```
+## 🚀 Run It
 
-In the output, you'll find options to open the app in a
+This app uses native Android modules, so **do not use Expo Go**. Expo Go will cry in the corner.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```powershell
+npm install
+npm run android
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📦 Build APK
 
-### Other setup steps
+```powershell
+cd android
+$env:NODE_ENV='development'
+.\gradlew.bat :app:assembleDebug --no-parallel
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+Your APK appears here:
 
-## Learn more
+```txt
+android/app/build/outputs/apk/debug/app-debug.apk
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Install it:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```powershell
+adb install -r android/app/build/outputs/apk/debug/app-debug.apk
+```
 
-## Join the community
+## 🔐 Phone Setup
 
-Join our community of developers creating universal apps.
+After installing, open Sanyam and tap the setup buttons:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Usage Access → lets Sanyam read screen time
+- Accessibility → lets Sanyam yeet blocked apps home
+- VPN setup → enables family DNS blocking
+- Notifications → lets Sanyam say “drink water bro”
+
+## 🧠 Tech Stack
+
+- Expo SDK 56
+- React Native 0.85
+- Expo Router
+- Kotlin native modules
+- Android AccessibilityService
+- Android UsageStatsManager
+- Android VpnService
+
+## 🛟 Emergency Rule
+
+Default unlock code:
+
+```txt
+1441
+```
+
+Keep it. Future-you may be sleepy and confused.
+
+## 🤝 Contributing
+
+Tiny PRs welcome. Giant PRs must bring snacks.
+
+Read `CONTRIBUTING.md` before poking the goblin.
+
+![typing cat gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXdpNWxyNzVjOWV4ZnhmbGtibDhlNGJkaXNwYzRlcDhqbTh1bXI4dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/JIX9t2j0ZTN9S/giphy.gif)
